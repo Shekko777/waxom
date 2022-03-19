@@ -1,0 +1,63 @@
+%flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+%flex-bet {
+  display: flex;
+  justify-content: space-between;
+}
+
+%pseudo {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+%background {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+%mont200 {
+  font-family: "Montserrat-ExtraLight", sans-serif;
+  font-weight: 200;
+}
+
+%mont300 {
+  font-family: "Montserrat-Light", sans-serif;
+  font-weight: 300;
+}
+
+%mont400 {
+  font-family: "Montserrat-Regular", sans-serif;
+  font-weight: 400;
+}
+
+%ral400 {
+  font-family: "Raleway-Regular", sans-serif;
+  font-weight: 400;
+}
+
+%ral500 {
+  font-family: "Raleway-Medium", sans-serif;
+  font-weight: 500;
+}
+
+%ral600 {
+  font-family: "Raleway-SemiBold", sans-serif;
+  font-weight: 600;
+}
+
+%ral800 {
+  font-family: "Raleway-ExtraBold", sans-serif;
+  font-weight: 800;
+}
+
+@mixin r($width) {
+  @media (max-width: #{$width}px) {
+    @content;
+  }
+}

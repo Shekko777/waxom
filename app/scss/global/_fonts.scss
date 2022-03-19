@@ -1,0 +1,19 @@
+@mixin font-face($font-family, $url, $weight) {
+  @font-face {
+    font-family: "#{$font-family}";
+    src: url("../../fonts/#{$url}.woff2") format("woff2"),
+      url("../../fonts/#{$url}.woff") format("woff");
+    font-weight: #{$weight};
+    font-display: swap;
+    font-style: normal;
+  }
+}
+
+@include font-face(Montserrat-Regular, Montserrat-Regular, 400);
+@include font-face(Montserrat-Light, Montserrat-Light, 300);
+@include font-face(Montserrat-ExtraLight, Montserrat-ExtraLight, 200);
+
+@include font-face(Raleway-ExtraBold, Raleway-ExtraBold, 800);
+@include font-face(Raleway-SemiBold, Raleway-SemiBold, 600);
+@include font-face(Raleway-Medium, Raleway-Medium, 500);
+@include font-face(Raleway-Regular, Raleway-Regular, 400);
